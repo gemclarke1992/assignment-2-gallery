@@ -24,7 +24,7 @@ const images = [
   },
   {
     filename: "fenrir.jpg",
-    alt: "Artistic rendering of a wolf, Fenrir, restrained by a rope around its neck, there are men in the background holding onto the ropes that bind fenrir.",
+    alt: "Artistic black and white rendering of a wolf, Fenrir, restrained by a rope around its neck and body, there are men in the background holding onto the ropes that bind fenrir.",
   },
   {
     filename: "jog.jpg",
