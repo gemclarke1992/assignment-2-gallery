@@ -4,13 +4,16 @@
   padding: 50px;
   position: relative;
   font-family: Georgia;
+  font-size: xx-large;
   text-align: center;
   font-weight: bold;
   display: grid;
   grid-gap: 1rem;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+  min-width: 100vw;
   background-color: brown;
+  color: white;
 }
 header {
   display: flex;
@@ -38,15 +41,15 @@ main {
   justify-content: center;
 }
 .thumb-bar img {
-  width: 120px;
-  height: auto;
+  width: 6.25vw;
+  height: 11.11vh;
   cursor: pointer;
   border: 2px solid black;
   border-radius: 4px;
 }
 .gallery-img {
-  width: 80vh;
-  max-width: 300vh;
+  width: 50vh;
+  max-width: 200vh;
 }
 button {
   width: 50px;
