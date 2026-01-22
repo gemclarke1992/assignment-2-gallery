@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .gallery {
   border: 3px solid black;
   border-radius: 10px;
@@ -10,8 +14,8 @@
   display: grid;
   grid-gap: 1rem;
   grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-  min-width: 100vw;
+  height: fit-content;
+  width: 100vw;
   background-color: brown;
   color: white;
 }
@@ -19,6 +23,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 70px;
 }
 
 main {
@@ -33,23 +38,25 @@ main {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  width: 70vw;
 }
 .thumb-bar {
   display: flex;
   gap: 0.5rem;
-  flex-wrap: wrap;
   justify-content: center;
+  overflow: auto;
 }
 .thumb-bar img {
-  width: 6.25vw;
   height: 11.11vh;
   cursor: pointer;
   border: 2px solid black;
   border-radius: 4px;
 }
 .gallery-img {
-  width: 50vh;
-  max-width: 200vh;
+  height: 100%;
+}
+.img-container {
+  height: 100vh;
 }
 button {
   width: 50px;
@@ -63,6 +70,14 @@ button {
 
 footer {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: end;
+  font-size: 20px;
+  margin: 10px;
+}
+
+@media (min-width: 600px) {
+  .thumb-container {
+    position: fixed;
+    top: 16vh;
+  }
 }
